@@ -2,7 +2,8 @@ import streamlit as st
 import openai
 import mysql.connector
 
-conexion = mysql.connector.connect(user='gpt3',password='makc2510', host= '34.176.80.44',database='mygpt3', port='3306')
+#conexion = mysql.connector.connect(user='gpt3',password='makc2510', host= '34.176.80.44',database='mygpt3', port='3306')
+conexion = mysql.connector.connect(user='root',password='makc2510', host= 'localhost',database='gpt3', port='3306')
 
 if conexion.is_connected():
             cursor=conexion.cursor()
