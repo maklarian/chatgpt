@@ -8,7 +8,7 @@ if conexion.is_connected():
             cursor=conexion.cursor()
             cursor.execute("Select database();")
             registro=cursor.fetchone()
-            cursor.execute("SELECT * FROM mk")
+            cursor.execute("SELECT * FROM futurodc_gpt3.mk")
             resultados=cursor.fetchall()
             for fila in resultados:
                 llave = fila[1]
