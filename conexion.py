@@ -19,7 +19,7 @@ if button:
             cursor=conexion.cursor()
             cursor.execute("Select database();")
             registro=cursor.fetchone()
-            cursor.execute("SELECT * FROM usuarios")
+            cursor.execute("SELECT * FROM futurodc_gpt3.usuarios")
             resultados=cursor.fetchall()
         for fila in resultados:
             print(fila[0],fila[1])
